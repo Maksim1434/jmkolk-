@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Исследователь</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="start-screen">
+    <h1>Исследователь</h1>
+    <input type="text" id="player-name" placeholder="Введите имя">
+    <button id="start-button" disabled>Старт</button>
+  </div>
+  
+  <div id="game-screen" style="display: none;">
+    <h1>Имя: <span id="display-name"></span></h1>
+    <div>Время: <span id="timer">00:00</span></div>
+    <div>Заряд: <span id="battery">50%</span></div>
+    <canvas id="game-canvas"></canvas>
+  </div>
+  
+  <div id="result-screen" style="display: none;">
+    <h1>Результат</h1>
+    <p>Имя: <span id="result-name"></span></p>
+    <p>Время: <span id="result-time"></span></p>
+    <button id="restart-button">Рестарт</button>
+  </div>
+  
+  <div id="game-over-screen" style="display: none;">
+    <h1>Игра окончена</h1>
+    <button id="game-over-restart">Рестарт</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
